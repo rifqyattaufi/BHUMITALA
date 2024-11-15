@@ -1,84 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhumitala</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <style>
-    .jumbotron {
-      background-image: url("https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/103/MTA-158771406/tidak_ada_merk_lukisan_pemandangan_sawah_dengan_desain_terasering_yang_indah_full01_y1w02kj.jpg");
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-    }
 
-    .tentang-kami {
-      color: #300101;
-    }
-  </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhumitala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+<style>
+  .jumbotron {
+    background-image: url("https://s3-alpha-sig.figma.com/img/af9f/8b40/428f236a24f820b2f8d951513f2f1acf?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q8S8VHMT9yuIeIbdar7xCUnEiQa-5bDoLM~-~DFNCRKFn3cvYHDp-ESN2leQ7fkttFPJbGJCRQKAp3hnhfW5rIIbK359AQj8ZrFuzPZSKmP4Nm-uXii43qoh87Cpl70C9N5wm8dEAJhwGJtSCiy9WJmgXuOl0ybpESFgPnCiNQlR-tn-1NG4oflVl19FzbJtxpEwWS40ASElK952M8bC9uYU1M3grvJ2OJmRNLhKlVWU3elRyK609gzdSL6lSDhk5DSfTvwIlXy5T0K3iiU426RdlPy8kGQcrYOTysjAs6uvg~szgbQe-moShJn6JmKgsvJ5K1h83zF1m8uTDRQuBQ__");
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+    display: flex;
+  }
 
-  <body>
-    <div id="header"></div>
+  .destinasi {
+    overflow: hidden;
+    position: relative;
+  }
 
-    <div class="jumbotron"></div>
+  .destinasi-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
-    <div class="container">
-      <div class="text-center tentang-kami">
-        <h1>TENTANG KERTASARI</h1>
-        <div class="text-start mb-4">
-          Selamat Datang di Website Kami Eksplorasi Keindahan Kertasari Nikmati
-          pengalaman wisata yang berbeda bersama Kertasari Adventure! Berlokasi
-          di Kertasari, Bandung, kami mengajak Anda menjelajahi keindahan alam
-          yang memukau dan keasrian pegunungan dengan berbagai potensi wisata
-          alam yang unik. Dari kebun teh yang hijau, keindahan Situ Cisanti dan
-          Situ Cinahiwung, hingga petualangan di Gunung Artapela dan Gunung
-          Wayang, setiap destinasi menawarkan pesona yang tak terlupakan.
+  .destinasi-content {
+    position: relative;
+  }
+
+  .destinasi-content img {
+    width: 20rem;
+    aspect-ratio: 2/1.5;
+    object-fit: cover;
+    border-radius: 3rem;
+    box-shadow: 0px 4px 4px #300101;
+  }
+
+  .destinasi-nama {
+    color: white;
+    background-color: #921111;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 0px;
+    box-shadow: 0px 4px 4px #300101;
+  }
+
+  .card-img-overlay {
+    padding: 0px;
+  }
+
+  .tentang-kami {
+    color: #300101;
+  }
+
+  .btn {
+    background-color: #921111;
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 1.8rem 1.5rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+  }
+
+  .btn:hover {
+    background-color: rgba(146, 17, 17, 0.8);
+    color: white;
+  }
+</style>
+
+<body>
+  <div id="header"></div>
+
+  <div class="jumbotron">
+    <div class="container my-auto text-center">
+      <h1 class="text-white fw-semibold">SELAMAT DATANG PECINTA TOUR</h1>
+    </div>
+  </div>
+
+  <div class="destinasi">
+    <img
+      src="https://s3-alpha-sig.figma.com/img/af9f/8b40/428f236a24f820b2f8d951513f2f1acf?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q8S8VHMT9yuIeIbdar7xCUnEiQa-5bDoLM~-~DFNCRKFn3cvYHDp-ESN2leQ7fkttFPJbGJCRQKAp3hnhfW5rIIbK359AQj8ZrFuzPZSKmP4Nm-uXii43qoh87Cpl70C9N5wm8dEAJhwGJtSCiy9WJmgXuOl0ybpESFgPnCiNQlR-tn-1NG4oflVl19FzbJtxpEwWS40ASElK952M8bC9uYU1M3grvJ2OJmRNLhKlVWU3elRyK609gzdSL6lSDhk5DSfTvwIlXy5T0K3iiU426RdlPy8kGQcrYOTysjAs6uvg~szgbQe-moShJn6JmKgsvJ5K1h83zF1m8uTDRQuBQ__"
+      alt="" class="destinasi-bg">
+    <div class="row row-cols-lg-3 row-cols-sm-1 g-4 my-5 destinasi-content">
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/1cf8/0f4a/2f4a1c746db1011019a0fd443fe83eaa?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xz72YGzoYtwwXJoeYWjjAQocv-FzGIhDgcUU5YYRUJyssySVsmgDOjSqx9zPB56OS6biuZvKOBD8l9WouP7fHHpGpRWOeM8Eicju3KwmcIPLgXpvYYw5rpsu0tJE2ZPgGFV6432EB-fUki8SHEEVHgoHKLCYH34G-mOqE78lQWyrqy~MJR2-MrKmYQ2lSLSA6v6DjwvF8Lm6W4scrVuRRxe3OgbJ6Ui4TGuUQlVHs65C7YEFCp5go8uFrWUmpR-uIZLRTi1s1eKJ5WS-Ao9wyaofL8cCEpyiabbMfn9i5NyVB2ItkBQLvzWeAn7eUCUe7~FIz9K4j~l78eB8YdmX8g__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">KEBUN TEH KERTASARI</h5>
         </div>
-        <div class="text-start">
-          Bagi para pecinta alam, Kertasari Adventure menyediakan paket tur yang
-          membawa Anda menyatu dengan alam: berjalan di Hutan Pinus Pakawa yang
-          menenangkan, menikmati sejuknya Kebun Teh Kertasari, hingga merasakan
-          segarnya Kebun Stroberi untuk memetik stroberi langsung dari kebunnya.
-          Dengan tim pemandu berpengalaman, setiap perjalanan di Kertasari
-          didesain untuk menjadi lebih dari sekadar wisata, tapi juga langkah
-          dalam menjaga dan menghormati kelestarian lingkungan. Bergabunglah
-          bersama kami, jelajahi berbagai keajaiban tersembunyi Bandung, dan
-          rasakan sensasi eco-tourism yang berkesan di setiap perjalanan Anda.
-          Bersama Kertasari Adventure, setiap langkah membawa Anda lebih dekat
-          dengan alam
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/91e0/660d/0e390f17afcb02bf726604a2a3fcf790?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qhkBWDOAkHuOQuw57bPb9voRONkGbSqoFAp3doExXxbtBZbBVdFd5tuyHKn36kdmiZbvQ1UteFckSumvpuW8h59eHCPZ2i4Q20WDNZXitSK8iRlZzi0UP1kxIEl407kmYmX6ESKIOOLEjM2tB~XLxaH~Zq5gAkVPzxRI-eSZY7vhHAx9xKXCaCa~ZyTfHbt1PsPfsfG6TJZaDsw1IwPmHxvYbvnoyHlISMFyOiFwBzddzYEdqrUfVzG7ETsR8DGAeqSne~1UzfAys24y432KI8iPVH8OR4v6Bb1GTqcK0s9o-oZuVQ61i7bGuMEPHkf-5a862QJshonJiQQOmYI1cg__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">GUNUNG ARTAPELA</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/f7e8/2c4a/0d3f2a82b9636a493b8459457dfe5bf5?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kyeX573WEFkXIaqEjmSzgeXg6fzcf8e0wf0tSdJxUpnrI1y6RNldxaCSfTccXPB-2OBgdE22lKtwCW4o1kln7COTQsS0a24eBb-oeKmjsSMeSmu~4VhfJIu7XhyEsXtPWAAitRwuVNMFL1-k7wbDS9PXDOeDD86Mr8FPc4O6IkecKlGn0uqM7RT0vMS4G0-lcqpmSdrSobMoTHmS5PogMjeeHM3rBBEEci7gPD~v9ycuW7GZL2BJ1JsjLDzWP8dlAzQsZUu44EUKYmNZHb0gmgSFgpZbleMsbI00~lu-bvDkGjCL-liBxwUpgTAMC8dCqbYtOYzPwycu9jBBLU1NTg__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">SUNGAI CITARUM</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/86dd/97b1/4f767c0e13de1374ab1dd596cab139d0?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xc0DxaLRNUryD8t45963ePjzA6gbtXCp0k36mQcF7avW-JMwV9HeQInGgc-CDZ~LhC1SdQZEfYhqetE62~7B2Diz9Gu6tiIeFwm7qeeLjLNjHUfvr9r4oyrbQPxeCwMLHXws8KnXgn~5ynLKv4TzixEytZVzpPDjmn5Qxb2dvpembC27K09-UsgDZT9gZWap7QS9gXW2DHi~X8qQMpzYLOFgdYnWp0OjhDDI6TLXfvIHfqJOAWfqzI3h4GvTP-euhH1Za8OC91lv4KiCsNzM4ePaKkv2MOXmGJEDqeIJKHpAVB1t8Vl1PgNYNoRyMDRF9KITg9Hv82j0rDdIJkfI~A__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">DANAU CIHANIWUNG</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/3904/cc57/cdb5147c28f9c4837e7df208deef9768?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eKxsv4wk2ro93diVALtzB9pYA~1ZB~ay2rCyIkcJFXNuRq~LorkuBmFc6WMZms88lppiMtUrYfGKVixcxeLSU8BUAkXxmaYLiEEZd2buS6YoqlnUSAAS5PASvdEnYcdYq6D-3R9G8PbpZ7aN08TVptownlw1dSMrPUx23xmHbUo5vuwrbduve59KyQcOwY8opUm3jovRiG7i1n4obnVlV1WIO0i4VzDe0Mpr9BoxfKYYZwqbu4RiEP-FJXNO21NYJ6w7riZZdEcPnXdB9jxXeLs5hDBaPpeJSxtrRV8jkCtnEHbDHu8B6LXX9GeQ0P51l0~yqUG9d18o7n5NZALlRg__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">HUNTAN PINUS PAKAWA</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/1180/1137/1e5b3a13d40b8d717677e423d2de2394?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U4MFKHvopojXsp67sl8yPO~Z9rOyvrpzMKSXDZPrkWTXLbM~Te4x~QPATl9UeHYShzkMeTK~C1gSvQqzWCvXipIinZ6ZKCpKy43X~kiN5MRmNttJ9ON5XD9~ZsTrLWZO0z1E97IsZbW1xRX-Q8sTFHbY8JDFflN8To-FHcc63WnB4QVPtjG22h41nrHWns34Efi53e~XIrSupW0xnwoMOCVOMofPsi8fSDJaS13iOJKPhtWDmlwr1h7JgyFHncqaRnBfI1HYQxwOs7UW8KNBjBjkohikvWFgbSRzFGWYPJRHpoQoDehrn-SHGSTSIaNYPxa62E~cQSwEo5mT-tJzrw__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">SITU CISANTI</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/f788/e1f0/08012e31fe88e7e3190eec452ffb9c8e?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MX1~oHLrOaXdILQCG6Nr8oHtFGdNz6uqHUUGjKyr-pc~RdDrVTSHU9uVQNhDpo54ZltufwDvRgyNocj4qJZ3Nv4pn~NcekI8xKVZcgRYORWQisYoY2TyV1UhmG~E3kMK9BEfS9MUVerTc2HH6ImbJRgsKQgO6RJ38H1dl2R6j25QiZkjjJQ28d2MD1HmcTQ0tza6jHqjA9w6usbTEkUMwxafKTe8gkUWBcRJdnBeLxbP3BtJn8o7dOpTP7lCptNP~4zkmyH3DgAb5uOuwAkABTP~QCniyCRXSx-VDcInzeecOO3y9D4ocRay6H1ybrUQbII59H1InXHn~ReNcf67rg__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">KEBUN AW STROBERI</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/99a7/c3af/88e59e12d4a2d075131ddae4dd9b33bf?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FNWYMO1TFS0dnoi0l~OfRbjcOvqIUv4DaNuTejw4zkPlMzcjVadRUXBQ35VJWv3HHRwKZuwet901TA9uMusrvcZSYngBFazi2uJoAAqR-OSKM2tUgs0C86VvAe47QG4dw0vI8XRribIA09-Ub1Vf1MSrbaDN9LvWE5Dr7pXDVovbKs3FNDZvAgraQLpCfDsGnEFwRM~lHfWRTSWcdj6HtCGexzyHpYibWEZHWlX-QQaj11u0M4RSMYgTPOi7DvHY1TbzvNlyqSUaN5yQEPOyNITuQLme4zq-Vw~t7iVLvgsiPQsPRC8g0-xQ5BTVEhIpYNCiYgBvzr7Od6Bp2gFtzQ__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">PABRIK TEH KERTASARI</h5>
+        </div>
+      </div>
+      <div class="col card bg-transparent border border-0 justify-content-center text-center flex-row">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/c6d7/0ac4/d8be747168e29757c5855a078c49f3d7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H891~hvW9gaI3Xyo0AjyTtk9MXQIDxKrwohlGuWo0rsVbVL6fxaq3186vIgwP0ABPeCK46z3MI5HVN4UAW0QNRdoctODnNFkhn66tJnSChetuWTim9Nuon2mzrnvmcSx9VbGIwWK3Tp7jOiF98ouz7fRzQaGRAGi8H1JriBM~64hm68MqkZaJR-3eH50IPGSY7usfU-VXk9U5UUgcWlBigCz8a2pQimTDjVQdZdLHxpAeBG1EJ3hXbRDO4EAHnAvL0c0zTA87yu6ejdnGM7kPlcVOTJwpybG3aIMzeErgCGiLRwewl5f8riwMg9KcYOKcsTm0itPVUkmH2UZ09VlXQ__">
+        <div class="card-img-overlay d-flex align-items-end justify-content-center">
+          <h5 class="destinasi-nama">GUNUNG WAYANG</h5>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="footer"></div>
+  <div class="container text-center tentang-kami my-5">
+    <h1>TENTANG KERTASARI</h1>
+    <div class="text-start mb-4">
+      Selamat Datang di Website Kami Eksplorasi Keindahan Kertasari Nikmati
+      pengalaman wisata yang berbeda bersama Kertasari Adventure! Berlokasi
+      di Kertasari, Bandung, kami mengajak Anda menjelajahi keindahan alam
+      yang memukau dan keasrian pegunungan dengan berbagai potensi wisata
+      alam yang unik. Dari kebun teh yang hijau, keindahan Situ Cisanti dan
+      Situ Cinahiwung, hingga petualangan di Gunung Artapela dan Gunung
+      Wayang, setiap destinasi menawarkan pesona yang tak terlupakan.
+    </div>
+    <div class="text-start">
+      Bagi para pecinta alam, Kertasari Adventure menyediakan paket tur yang
+      membawa Anda menyatu dengan alam: berjalan di Hutan Pinus Pakawa yang
+      menenangkan, menikmati sejuknya Kebun Teh Kertasari, hingga merasakan
+      segarnya Kebun Stroberi untuk memetik stroberi langsung dari kebunnya.
+      Dengan tim pemandu berpengalaman, setiap perjalanan di Kertasari di
+      desain untuk menjadi lebih dari sekadar wisata, tapi juga langkah
+      dalam menjaga dan menghormati kelestarian lingkungan. Bergabunglah
+      bersama kami, jelajahi berbagai keajaiban tersembunyi Bandung, dan
+      rasakan sensasi eco-tourism yang berkesan di setiap perjalanan Anda.
+      Bersama Kertasari Adventure, setiap langkah membawa Anda lebih dekat
+      dengan alam
+    </div>
+    <div class="btn">
+      TEMUKAN LIBURAN TERBAIK KAMU
+    </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // Load header
-      fetch("layout/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header").innerHTML = data;
-        });
+  <div id="footer"></div>
 
-      // Load footer
-      fetch("layout/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    // Load header
+    fetch("layout/header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      });
+
+    // Load footer
+    fetch("layout/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+
 </html>
